@@ -1,0 +1,13 @@
+<div *ngIf="User; else falseBlock" class="w-50 m-auto text-left alert alert-dark mt-5 mb-2" >
+  <h5>Name: {{User.name}}</h5>
+  <h6>Age: {{User.age}}</h6>
+  <h6>Email: {{User.email}}</h6>
+
+  <h6>Phone: {{User.phone}}</h6>
+</div>
+
+<ng-template #falseBlock>
+  <h1 class="alert alert-danger">Loading...</h1>
+</ng-template>
+
+
